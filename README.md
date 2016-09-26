@@ -4,7 +4,7 @@ For the OpenStack debugging session, you need to install devstack with PyCharm I
 
 1. Create a VirtualBox VM from the provided OVA file
 2. Create a VM on the local PC/MAC and install devstack & PyCharm manually
-3. Use a remove VM on a cloud
+3. Use a VM on a cloud
 
 Option 1 is the easiest and can be setup on PC/MAC. All you have to do is install VirtualBox and then import the OVA file. This will create a VM that has everything you need - Ubuntu 14.04, Devstack, PyCharm and Debug configuration.
 
