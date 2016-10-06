@@ -12,4 +12,15 @@ If you are having issues downloading the huge OVA file, consider installing from
 
 The final option is using a VM on a cloud such as AWS, GCE or any public cloud.
 
+## Create a devstack VM from OVA file
+Start VirtualBox and open the OVA file. Please follow these steps:
+
+1. Login to the VM using the provided username/password.
+2. Open Terminal application
+3. Change to devstack directory (cd devstack)
+4. Run the following commands to bring volumes online
+  1. sudo losetup -f /opt/stack/data/stack-volumes-default-backing-file
+  2. sudo losetup -f /opt/stack/data/stack-volumes-lvmdriver-1-backing-file
+5. run rejoin.sh
+
 
