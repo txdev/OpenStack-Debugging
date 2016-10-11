@@ -7,7 +7,7 @@ For the OpenStack debugging session, you need to install devstack with PyCharm I
 3. Use a VM on a cloud
  
 ## Option 1 - Create a VirtualBox VM from the provided OVA file
-This is the recommended way to setup the environment. However, it requires downloading OVA file (around 4GB size) from Internet. If you are having downloading this file, consider using Option 2.
+This is the recommended way to setup the environment. However, it requires downloading OVA file (around 4GB size) from Internet. If you are having problems downloading this file, consider using Option 2.
 
 ### Pre-requisites
 * At least 8G of memory
@@ -16,7 +16,7 @@ This is the recommended way to setup the environment. However, it requires downl
 * Shutdown all VMs, if you have any of them running
 
 ### Step 1 - Download the OVA file
-Download the OVA file and save it the local disk
+Download the OVA file and save it the local disk. The Link to the OVA file will be provided separately.
 
 ### Step 2 - Import OVA file
 Follow these steps to import OVA file
