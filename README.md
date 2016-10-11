@@ -29,7 +29,7 @@ The above process will install a fully equipped VM, however VM will not be start
 To start the VM, goto VirtualBox and select the new VM from the list. Click on the "Start" button to start the VM.
 
 ## Option 2 - Install devstack & PyCharm manually
-Please see the insructions [http://wiringtheplanet.blogspot.com/2016/09/installing-devstack-and-pycharm-for.html?view=classic] for installing PyCharm and Devstack manually
+Please see the insructions [http://wiringtheplanet.blogspot.com/2016/09/installing-devstack-and-pycharm-for.html?view=classic] for installing PyCharm and Devstack manually on local PC/MAC.
 
 ## Option 3 - Setup a VM on the Cloud
 You can setup a VM on any cloud that can provide a public IP address for a VM. Use the instructions from Option 2 to install devstack and PyCharm.
