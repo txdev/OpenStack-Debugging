@@ -8,19 +8,40 @@ For the OpenStack debugging session, you need to install devstack with PyCharm I
 
 Option 1 is the easiest and can be setup on PC/MAC. All you have to do is install VirtualBox and then import the OVA file. This will create a VM that has everything you need - Ubuntu 14.04, Devstack, PyCharm and Debug configuration.
 
-If you are having issues downloading the huge OVA file, consider installing from scratch. Please instructions [here](http://wiringtheplanet.blogspot.com/2016/09/installing-devstack-and-pycharm-for.html?view=classic).
+If you are having issues downloading the huge OVA file, consider installing from scratch. Please instructions (http://wiringtheplanet.blogspot.com/2016/09/installing-devstack-and-pycharm-for.html?view=classic).
 
 The final option is using a VM on a cloud such as AWS, GCE or any public cloud.
+For both Options 1 and 2, your PC/Mac needs to have 
+* Atleast 8G Memory
+* 20 GB of free storage
+* 
+## Option 1 - Create a VirtualBox VM from the provided OVA file
+This is the recommended way to setup the environment. However, it requires downloading OVA file (around 4GB size) from Internet. If you are having downloading this file, consider using Option 2.
 
-## Create a devstack VM from OVA file
-Start VirtualBox and import the OVA file. Please follow these steps:
+### Pre-requisites
+* At least 8G of memory
+* 20 GB free storage
+* VirtualBox installed and configured (If VirtualBox is not installed, get the binaries for PC/MAC from https://www.virtualbox.org/wiki/Downloads and follow the instructions from https://www.virtualbox.org/manual/ch01.html#intro-installing
+* Shutdown all VMs, if you have any of them running
 
-1. Login to the VM using the provided username/password.
-2. Open Terminal application
-3. Change to devstack directory (cd devstack)
-4. Run the following commands to bring volumes online
-  1. sudo losetup -f /opt/stack/data/stack-volumes-default-backing-file
-  2. sudo losetup -f /opt/stack/data/stack-volumes-lvmdriver-1-backing-file
-5. run rejoin.sh
+### Step 1 - Download the OVA file
+Download the OVA file and save it the local disk
+
+### Step 2 - Import OVA file
+Follow these steps to import OVA file
+* Start VirtualBox
+* Click on "File -> Import Appliance"
+* Point to the downloaded OVA file
+* Accept the default "Appliance settings" and click on "Import"
+
+The above process will install a fully equipped VM, however VM will not be started auotmatically. 
+To start the VM, goto VirtualBox and select the new VM from the list. Click on the "Start" button to start the VM.
+
+## Option 2 - Install devstack & PyCharm manually
+Please see the insructions [http://wiringtheplanet.blogspot.com/2016/09/installing-devstack-and-pycharm-for.html?view=classic][here] for installing PyCharm and Devstack manually
+
+## Option 3 - Setup a VM on the Cloud
+You can setup a VM on any cloud that can provide a public IP address for a VM. Use the instructions from Option 2 to install devstack and PyCharm.
+
 
 
