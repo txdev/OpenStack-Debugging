@@ -13,7 +13,7 @@ This is the recommended way to setup the environment. However, it requires downl
 * At least 8G of memory
 * 20 GB free storage
 * VirtualBox installed and configured (If VirtualBox is not installed, get the binaries for PC/MAC from https://www.virtualbox.org/wiki/Downloads and follow the instructions from https://www.virtualbox.org/manual/ch01.html#intro-installing
-* Shutdown all VMs, if you have any of them running
+* Shutdown all VMs, if you have any of them running)
 
 ### Step 1 - Download the OVA file
 Download the OVA file and save it the local disk. The Link to the OVA file will be provided separately.
