@@ -32,12 +32,15 @@ To start the VM, goto VirtualBox and select the new VM from the list. Click on t
 PyCharm uses inotify to monitor directories for changes. By default, ubuntu's inotify limit is set to 8192. For PyCharm debugging to work, we need to set it to a higher value. Run the following commands:
 
 * find the current limit
+
  `cat /proc/sys/fs/inotify/max_user_watches`
      
 * change the current limit
+
  `sudo sysctl fs.inotify.max_user_watches=16384`
 
 * permanently change the limit
+
  `echo 16384 | sudo tee -a /proc/sys/fs/inotify/max_user_watches`
 
 ## Option 2 - Install devstack & PyCharm manually
