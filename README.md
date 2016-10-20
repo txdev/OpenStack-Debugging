@@ -29,7 +29,7 @@ The above process will install a fully equipped VM, however VM will not be start
 To start the VM, goto VirtualBox and select the new VM from the list. Click on the "Start" button to start the VM.
 
 ### Step 3 - Additional configuration
-PyCharm uses inotify to monitor directories for changes. By default, ubuntu's inotify limit is set to 8192. For PyCharm debugging to work, we need to set it to a higher value. Run the following commands:
+PyCharm uses inotify to monitor directories for changes. By default, ubuntu's inotify limit is set to 8192. For PyCharm debugging to work, we need to set it to a higher value. See https://confluence.jetbrains.com/display/IDEADEV/Inotify+Watches+Limit for more information. Run the following commands:
 
 * find the current limit
 
